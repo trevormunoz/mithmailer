@@ -5,9 +5,8 @@ function EmailSection(props) {
     return (
         <Item align={props.align} valign={props.valign}>
           <Box border="0" cellpadding="20" cellspacing="0" width={props.width} id={props.idString}>
-              <Item align="center" valign="top">
-                I'm the {props.idString} of this amazing email!
-              </Item>
+          <Box border="0" cellpadding="0" cellspacing="0" width={props.width} id={props.idString}>
+              {props.children}
           </Box>
         </Item>
     );
