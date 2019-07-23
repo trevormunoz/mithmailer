@@ -6,9 +6,9 @@ const headerStyle = {
     padding: '40px 0 30px 0'
 }
 
-function Header() {
+function Header(props) {
     return(
-        <EmailSection>
+        <EmailSection idString={props.idString}>
             <Item align="center" valign="top" bgcolor="#70bbd9" style={headerStyle}>
                 <p>I'm still the header</p>
             </Item>

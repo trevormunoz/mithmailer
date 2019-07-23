@@ -9,10 +9,10 @@ const bodyStyle = {
 
 const Content = importMDX.sync('./content/bodyContent.mdx')
 
-function Body() {
+function Body(props) {
     return(
-        <EmailSection>
             <Item align="center" valign="top" bgcolor="#ffffff" style={bodyStyle}>
+        <EmailSection idString={props.idString}>
                 <Content />
             </Item>
         </EmailSection>
