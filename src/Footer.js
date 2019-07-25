@@ -1,7 +1,11 @@
 import React from "react";
+import Item from "./ContentItem";
+import EmailSection from "./EmailSection";
+import DecorativeBorder from "./DecorativeBorder";
 import { typeStyles } from './utils/sharedStyles';
 
 const footerStyle = {
+    ...typeStyles,
     padding: '40px 30px 30px 30px',
     fontSize: '12px',
     color: '#ffffff'
