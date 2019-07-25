@@ -5,6 +5,10 @@ import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
 
+const baseEmailStyle = {
+  borderCollapse: 'collapse'
+}
+
 function Email() {
   return (
     <>
