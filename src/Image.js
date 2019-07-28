@@ -1,6 +1,7 @@
 import React from "react";
 
 const imageStyle = {
+    padding: '0px 10px 0px 10px',
     border:'0',
     outline: 'none', 
     textDecoration: 'none',
@@ -22,8 +23,8 @@ function EmailImage(props) {
 }
 
 EmailImage.defaultProps = {
-    width: "100%",
-    src: "center",
+    width: "95%",
+    src: undefined,
     valign: "top"
 }
 
