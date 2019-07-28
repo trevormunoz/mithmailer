@@ -17,6 +17,7 @@ function Header(props) {
             <Item align="center" valign="top" bgcolor="#424242" style={headerStyle}>
                 <td>
                     <EmailImage 
+                        src={headerImage} 
                         alt="Some amazing alt text goes here"
                         height="250">
                     </EmailImage>
