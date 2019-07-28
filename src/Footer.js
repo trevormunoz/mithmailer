@@ -11,6 +11,7 @@ const footerStyle = {
     color: '#ffffff'
 }
 
+// TODO: Add social buttons?
 function Footer(props) {
     return(
         <EmailSection idString={props.idString}>
@@ -20,6 +21,7 @@ function Footer(props) {
                     <td width="60%" style={footerStyle}>
                         <EmailSection>
                             <Item>
+                                {/* TODO: Style links */}
                                 <td align="left" style={typeStyles}>Except where noted, all content is <br/> 
                                 &copy; Maryland Institute for Technology in the Humanities and is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license.</a></td>
                             </Item>
@@ -27,6 +29,7 @@ function Footer(props) {
                                 <td align="left" style={{
                                     ...typeStyles, 
                                     padding: '15px 0px 0px 0px'}}>
+                                    {/* TODO: Implement unsubscribe */}
                                     Unsubscribe stuff
                                 </td>
                             </Item>
