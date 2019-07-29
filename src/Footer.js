@@ -29,9 +29,8 @@ function Footer(props) {
                     <td width="60%" style={footerStyle}>
                         <EmailSection>
                             <Item>
-                                {/* TODO: Style links */}
                                 <td align="left" style={typeStyles}>Except where noted, all content is <br/> 
-                                &copy; Maryland Institute for Technology in the Humanities and is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license.</a></td>
+                                &copy; Maryland Institute for Technology in the Humanities and is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" style={{color: '#a8b50a'}}>Creative Commons Attribution 4.0 International license.</a></td>
                             </Item>
                             <Item>
                                 <td align="left" style={{
