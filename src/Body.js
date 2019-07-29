@@ -17,7 +17,7 @@ function Body(props) {
             <Item align="left" valign="top" bgcolor="#ffffff" style={bodyStyle} >
                 <td style={typeStyles}>
                     <Suspense fallback={<div>Loading...</div>}>
-                    <Content />
+                        <Content />
                     </Suspense>
                 </td>
             </Item>
