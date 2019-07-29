@@ -10,7 +10,7 @@ import { typeStyles } from './utils/sharedStyles';
 
 const footerStyle = {
     ...typeStyles,
-    padding: '40px 30px 30px 30px',
+    padding: '40px 30px 15px 30px',
     fontSize: '12px',
     color: '#ffffff'
 }
