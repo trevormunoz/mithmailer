@@ -1,6 +1,10 @@
 import React from "react";
 import Item from "./ContentItem";
 import EmailSection from "./EmailSection";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import DecorativeBorder from "./DecorativeBorder";
 import { typeStyles } from './utils/sharedStyles';
 
@@ -11,7 +15,11 @@ const footerStyle = {
     color: '#ffffff'
 }
 
-// TODO: Add social buttons?
+const iconStyle = {
+    padding: '0px 10px 0px 10px',
+    color: '#a8b50a'
+}
+
 function Footer(props) {
     return(
         <EmailSection idString={props.idString}>
@@ -42,6 +50,24 @@ function Footer(props) {
                         0301 Hornbake Library North <br/>
                         University of Maryland <br/>
                         College Park, MD 20742
+                    </td>
+                </Item>
+            </EmailSection>
+            <EmailSection>
+                <Item bgcolor="#42454a">
+                    <td align="right" style={{padding: '15px 30px 30px 30px'}}>
+                        <a href="https://mith.umd.edu">
+                            <FontAwesomeIcon icon={faBookmark} style={iconStyle} />
+                        </a>
+                        <a href="https://twitter.com/umd_mith">
+                            <FontAwesomeIcon icon={faTwitter} style={iconStyle} />
+                        </a>
+                        <a href="https://www.facebook.com/UMD.MITH">
+                            <FontAwesomeIcon icon={faFacebook} style={iconStyle} />
+                        </a>
+                        <a href="https://github.com/umd-mith">
+                            <FontAwesomeIcon icon={faGithub} style={iconStyle} />
+                        </a>
                     </td>
                 </Item>
             </EmailSection>
