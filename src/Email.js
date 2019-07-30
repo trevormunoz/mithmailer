@@ -9,15 +9,15 @@ const baseEmailStyle = {
   borderCollapse: 'collapse'
 }
 
-function Email() {
+function Email(props) {
   return (
     <>
     <Helmet>
-      <title>Email title</title>
+      <title>{props.msgTitle}</title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </Helmet>
-    <Preview previewMsg="You'll want to open this amazing email!" />
+    <Preview previewMsg={props.preview} />
     <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
         <tr>
             <td align="center" valign="top">
