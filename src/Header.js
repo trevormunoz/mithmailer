@@ -11,20 +11,11 @@ const headerStyle = {
     color: '#ffffff'
 }
 
-// TODO: Make this less hacky
-let imageComponent;
+let imgSrc;
 if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    imageComponent = <EmailImage 
-                        src={headerImage} 
-                        alt="Some amazing alt text goes here"
-                        height="250" >
-                    </EmailImage>
+    imgSrc = headerImage
 } else {
-    imageComponent = <EmailImage 
-                        src='http://cloudfronturl.stuff'
-                        alt="Some amazing alt text goes here"
-                        height="250" >
-                    </EmailImage>
+    imgSrc = 'http://cloudfronturl.stuff'
 }
 
 function Header(props) {
@@ -32,7 +23,11 @@ function Header(props) {
         <EmailSection idString={props.idString}>
             <Item align="center" valign="top" bgcolor="#424242" style={headerStyle}>
                 <td>
-                    {imageComponent}
+                    <EmailImage 
+                        src={imgSrc} 
+                        alt="Some amazing alt text goes here"
+                        height="250" >
+                    </EmailImage>
                 </td>
             </Item>
         </EmailSection>
