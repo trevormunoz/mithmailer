@@ -11,6 +11,7 @@ const headerStyle = {
     color: '#ffffff'
 }
 
+// TODO: Make this less hacky
 let imageComponent;
 if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
     imageComponent = <EmailImage 
