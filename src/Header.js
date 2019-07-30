@@ -3,7 +3,7 @@ import { Item } from "react-html-email";
 import EmailSection from "./EmailSection"
 import EmailImage from "./Image";
 import { typeStyles } from './utils/sharedStyles';
-import headerImage from './assets/images/MITH-20th-logo_wht.svg'
+import headerImage from './assets/images/MITH-20th-logo_wht.svg';
 
 const headerStyle = {
     ...typeStyles,
@@ -11,16 +11,27 @@ const headerStyle = {
     color: '#ffffff'
 }
 
+let imageComponent;
+if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    imageComponent = <EmailImage 
+                        src={headerImage} 
+                        alt="Some amazing alt text goes here"
+                        height="250" >
+                    </EmailImage>
+} else {
+    imageComponent = <EmailImage 
+                        src='http://cloudfronturl.stuff'
+                        alt="Some amazing alt text goes here"
+                        height="250" >
+                    </EmailImage>
+}
+
 function Header(props) {
     return(
         <EmailSection idString={props.idString}>
             <Item align="center" valign="top" bgcolor="#424242" style={headerStyle}>
                 <td>
-                    <EmailImage 
-                        src={headerImage} 
-                        alt="Some amazing alt text goes here"
-                        height="250">
-                    </EmailImage>
+                    {imageComponent}
                 </td>
             </Item>
         </EmailSection>
