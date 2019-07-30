@@ -36,7 +36,8 @@ function Footer(props) {
                                 <td align="left" style={{
                                     ...typeStyles, 
                                     padding: '15px 0px 0px 0px'}}>
-                                    To immediately unsubscribe from MITH emails, fill out <a href="https://go.umd.edu/mith-unsubscribe" style={{color: '#a8b50a'}}>this form</a>.
+                                    To immediately unsubscribe from MITH emails,<br /> 
+                                    fill out <a href="https://go.umd.edu/mith-unsubscribe" style={{color: '#a8b50a'}}>this form</a>.
                                 </td>
                             </Item>
                         </EmailSection>
