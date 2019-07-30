@@ -3,7 +3,7 @@ import { Item } from "react-html-email";
 import EmailSection from "./EmailSection"
 import EmailImage from "./Image";
 import { typeStyles } from './utils/sharedStyles';
-import headerImage from './assets/images/MITH-20th-logo_wht_rgb.png'
+import headerImage from './assets/images/MITH-20th-logo_wht.svg'
 
 const headerStyle = {
     ...typeStyles,
